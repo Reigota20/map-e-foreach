@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+		/>
+		<title>Compras</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="card mt-5 text-center">
+				<div class="card-body mt-1 text-center">
+					<h2 class="card-title">Carrinho de Compras</h2>
+					<div class="row">
+						<input id="inputid" class="form-control" value="" required type="text" name="" />
+					</div>
+					<div class="row">
+						<input id="inputproduto" class="form-control" value="" required type="text" name="" />
+					</div> 
+					<div class="row">
+						<input id="inputquantidade" class="form-control" value="" required type="text" name="" />
+					</div>
+					<div class="row">
+						<input id="inputvalorunitario" class="form-control" value="" required type="text" name="" />
+					</div>
+				  <div class="row">
+					<br />
+					<div class="row">
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button
+                                type="button"
+                                class="btn btn-sucess form control-sn"
+                                onclick="add()"
+							>
+								Adicionar
+							</button> 
+							<button
+                                type="button"
+                                class="btn btn-sucess form control-sn"
+								onclick="apagar()"
+								
+							>
+								Remover
+							</button> 
+							<button
+								type="button"
+                                class="btn btn-sucess form-control-sn"
+                                onclick="limpar()"
+							>
+								Limpar
+							</button> 
+							<button
+                                type="button"
+                                class="btn btn-sucess form-control-sn"
+                                onclick="mostrarProdutos()"
+                            >
+								Listar
+                            </button>
+                            <button
+                               type="button"
+                               class="btn btn-marning form-control-sn"
+                               onclick="mostrarTabela()"
+                            >
+                            Tabela</button>
+						</div>
+					</div>
+
+					<div id="lista"></div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="exemplo.js"></script>
+	</body>
+</html>
